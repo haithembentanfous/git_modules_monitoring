@@ -12,6 +12,6 @@ git.Repo.clone_from("https://github.com/haithembentanfous/generate_html_from_jso
 
 
 g = git.Git("/media/haithem/DATA/Haithem/works/test")
-loginfo = g.log('--format=%an-%ad-%s')
+loginfo = g.log('--format=LOGS|%an-%ad-%s','--name-only')
 
 print(loginfo)
